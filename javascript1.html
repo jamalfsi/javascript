@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function headScript(){
+            document.getElementById("fromhead").innerHTML = "This is from head tag script function"
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Javascript</h1>
+    <button type="button" onclick="document.getElementById('showdate').innerHTML=Date()">Show Date</button>
+    <button type="button" onclick="document.getElementById('showdate').innerHTML=''">Hide Date</button>
+    <button type="button" onclick="document.getElementById('showdate').style.fontSize='30px'">Change Font big</button>
+    <button type="button" onclick="document.getElementById('showdate').style.fontSize='20px'">Change Font normal</button>
+
+    <p id="showdate"></p>
+
+    
+    <p id="hide" style="display: none;"> This is normally hidden</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='block'">show hidden content</button>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">back to hidden </button>
+
+    <h1 id="insidescript1"></h1>
+    <h1 id="insidescript2"></h1>
+    <button type="button" onclick="headScript()">Head script </button>
+
+    <h3 id="fromhead"></h3>
+    <script>
+        document.getElementById('insidescript1').innerHTML = "This text is coming from body Script tag 1"
+    </script>
+    <script>
+        document.getElementById('insidescript2').innerHTML = "This text is coming from body Script tag 2"
+    </script>
+</body>
+</html>
