@@ -11,12 +11,26 @@
     <h1>Backtiks example</h1>
 
     <p id="demo"></p>
+    <p id="demo1"></p>
+
+    let title = "Template Literals"
+    let langs = ["Tamil", "English", "Hindi", "Arabic"]
+
+    let html = `<h2>${title}</h2><ul>`
+
+        for (const lang of langs){
+            html += `<li>${lang}</li>`
+        }
+
+    html += `</ul>`
 
     <script>
         let fname= 'Jamal'
         let lname = 'Mydeen'
         let result = ` Welcome  ${fname} and ${lname}`
         document.getElementById('demo').innerHTML = result
+        document.getElementById('demo1').innerHTML = html
+
     </script>
 </body>
 </html>
