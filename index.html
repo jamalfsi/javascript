@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        function headScript(){
-            document.getElementById("fromhead").innerHTML = "This is from head tag script function"
-        }
-    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -29,11 +25,14 @@
     <button type="button" onclick="headScript()">Head script </button>
 
     <h3 id="fromhead"></h3>
+    <button type="button" onclick="print()">Result</button>
     <script>
         document.getElementById('insidescript1').innerHTML = "This text is coming from body Script tag 1"
     </script>
     <script>
         document.getElementById('insidescript2').innerHTML = "This text is coming from body Script tag 2"
+
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
